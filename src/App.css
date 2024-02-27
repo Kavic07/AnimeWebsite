@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,164 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+/* body {
+  background-color: antiquewhite;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul > li {
+  text-decoration: none;
+  list-style-type: none;
+  color: brown;
+}
+
+nav > ul > li > Link {
+  color: red;
+  text-decoration: none;
+}
+ */
+/* navbar starts here */
+.nav-link:focus {
+  font-weight: bold;
+  font-style: italic;
+}
+/* navbar ends here */
+
+
+/* home page section starts here */
+.home-wrapper {
+  background-image: url('./images/hero3.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 91vh;
+  text-align: center;
+  color: aliceblue;
+  padding-top: 15%;
+}
+
+.home-wrapper > h2 > span {
+  color: aqua;
+  font-style: italic;
+  font-size: 40px;
+  font-family: cursive;
+  display: inline-block; /* Ensure inline-block for proper transformation */
+  animation: tilt-shaking 0.5s infinite; /* Apply animation to the span */
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+h2 span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+h2 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+h2 span:nth-child(3) {
+  animation-delay: 0.10s;
+}
+
+.home-wrapper > p {
+  color: azure;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home-wrapper > p > span {
+  color: red;
+}
+
+.home-wrapper > button {
+  background-color: gray;
+  text-decoration: none;
+}
+
+.btn-link {
+  text-decoration-line: none;
+  color:aqua;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/* home page section ends here */
+
+/* about section starts here */
+.about-section {
+  background-image: url('./images/about-anime-pic.jpg');
+  background-size: cover;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.about-section > h1{
+  text-align: center;
+  font-family: cursive;
+  color: brown;
+}
+
+.about-section > p {
+  width: 80%;
+  margin: auto;
+  padding-top: 1em;
+  font-size: 20px;
+}
+
+.about-section > .para::first-letter {
+  font-size: 35px;
+  font-style: italic;
+  font-family: cursive;
+  font-weight: bold;
+  color: maroon;
+}
+
+.about-section > p > span {
+  color: maroon;
+  font-weight: bold;
+}
+/* about section ends here */
+
+/* contact-section starts here */
+.wrapper {
+  background-image: url('./images/contact-anime-pic2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 91vh;
+}
+
+.contact-section {
+  width: 500px;
+  margin-left: 2em;
+}
+
+.contact-section > h1 {
+  font-family: cursive;
+  color: brown;
+}
+
+.form-label {
+  font-weight: bold;
+}
+/* contact-section ends here */
