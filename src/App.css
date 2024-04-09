@@ -70,10 +70,9 @@ nav > ul > li > Link {
 }
 /* navbar ends here */
 
-
 /* home page section starts here */
 .home-wrapper {
-  background-image: url('./images/hero3.jpg');
+  background-image: url("./images/hero3.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -93,11 +92,21 @@ nav > ul > li > Link {
 }
 
 @keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 h2 span:nth-child(1) {
@@ -109,7 +118,7 @@ h2 span:nth-child(2) {
 }
 
 h2 span:nth-child(3) {
-  animation-delay: 0.10s;
+  animation-delay: 0.1s;
 }
 
 .home-wrapper > p {
@@ -129,24 +138,23 @@ h2 span:nth-child(3) {
 
 .btn-link {
   text-decoration-line: none;
-  color:aqua;
+  color: aqua;
   font-weight: bold;
   font-style: italic;
 }
-
 
 /* home page section ends here */
 
 /* about section starts here */
 .about-section {
-  background-image: url('./images/about-anime-pic.jpg');
+  background-image: url("./images/about-anime-pic.jpg");
   background-size: cover;
   height: 100%;
   padding-top: 2em;
   padding-bottom: 3em;
 }
 
-.about-section > h1{
+.about-section > h1 {
   text-align: center;
   font-family: cursive;
   color: brown;
@@ -175,7 +183,7 @@ h2 span:nth-child(3) {
 
 /* contact-section starts here */
 .wrapper {
-  background-image: url('./images/contact-anime-pic2.jpg');
+  background-image: url("./images/contact-anime-pic2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -196,3 +204,35 @@ h2 span:nth-child(3) {
   font-weight: bold;
 }
 /* contact-section ends here */
+
+/* Fetchanimeapi section starts here */
+/* .container {
+  background-color: black;
+  padding-left: 8em;
+}
+.nav-bar {
+  display: flex;
+}
+.nav-bar > a {
+  text-decoration: none;
+}
+.nav-bar > ul {
+  display: flex;
+  list-style-type: none;
+}
+.container > .nav-bar > ul > li > a {
+  padding-right: 1em;
+  text-decoration: none;
+  color: white;
+}
+.content > h2 {
+  color: white;
+}
+.content > a {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 8em 0.5em 8em;
+  text-align: center;
+  border-radius: 0.2em;
+} */
